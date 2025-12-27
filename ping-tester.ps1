@@ -79,56 +79,20 @@ foreach ($server in $servers) {
 Clear-Host
 # --- Changed: Removed emojis from the banner ---
 Write-Host @"
-
-
-                                                                                                                                     
-                                                                                                                                     
-        GGGGGGGGGGGGG               AAA               MMMMMMMM               MMMMMMMMEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRR         
-     GGG::::::::::::G              A:::A              M:::::::M             M:::::::ME::::::::::::::::::::ER::::::::::::::::R        
-   GG:::::::::::::::G             A:::::A             M::::::::M           M::::::::ME::::::::::::::::::::ER::::::RRRRRR:::::R       
-  G:::::GGGGGGGG::::G            A:::::::A            M:::::::::M         M:::::::::MEE::::::EEEEEEEEE::::ERR:::::R     R:::::R      
- G:::::G       GGGGGG           A:::::::::A           M::::::::::M       M::::::::::M  E:::::E       EEEEEE  R::::R     R:::::R      
-G:::::G                        A:::::A:::::A          M:::::::::::M     M:::::::::::M  E:::::E               R::::R     R:::::R      
-G:::::G                       A:::::A A:::::A         M:::::::M::::M   M::::M:::::::M  E::::::EEEEEEEEEE     R::::RRRRRR:::::R       
-G:::::G    GGGGGGGGGG        A:::::A   A:::::A        M::::::M M::::M M::::M M::::::M  E:::::::::::::::E     R:::::::::::::RR        
-G:::::G    G::::::::G       A:::::A     A:::::A       M::::::M  M::::M::::M  M::::::M  E:::::::::::::::E     R::::RRRRRR:::::R       
-G:::::G    GGGGG::::G      A:::::AAAAAAAAA:::::A      M::::::M   M:::::::M   M::::::M  E::::::EEEEEEEEEE     R::::R     R:::::R      
-G:::::G        G::::G     A:::::::::::::::::::::A     M::::::M    M:::::M    M::::::M  E:::::E               R::::R     R:::::R      
- G:::::G       G::::G    A:::::AAAAAAAAAAAAA:::::A    M::::::M     MMMMM     M::::::M  E:::::E       EEEEEE  R::::R     R:::::R      
-  G:::::GGGGGGGG::::G   A:::::A             A:::::A   M::::::M               M::::::MEE::::::EEEEEEEE:::::ERR:::::R     R:::::R      
-   GG:::::::::::::::G  A:::::A               A:::::A  M::::::M               M::::::ME::::::::::::::::::::ER::::::R     R:::::R      
-     GGG::::::GGG:::G A:::::A                 A:::::A M::::::M               M::::::ME::::::::::::::::::::ER::::::R     R:::::R      
-        GGGGGG   GGGGAAAAAAA                   AAAAAAAMMMMMMMM               MMMMMMMMEEEEEEEEEEEEEEEEEEEEEERRRRRRRR     RRRRRRR      
-                                                                                                                                        
-
-
-
-
-
-                                                                                                                                                                                                                                                                       
-KKKKKKKKK    KKKKKKKHHHHHHHHH     HHHHHHHHH               AAA                              AAA               NNNNNNNN        NNNNNNNN
-K:::::::K    K:::::KH:::::::H     H:::::::H              A:::A                            A:::A              N:::::::N       N::::::N
-K:::::::K    K:::::KH:::::::H     H:::::::H             A:::::A                          A:::::A             N::::::::N      N::::::N
-K:::::::K   K::::::KHH::::::H     H::::::HH            A:::::::A                        A:::::::A            N:::::::::N     N::::::N
-KK::::::K  K:::::KKK  H:::::H     H:::::H             A:::::::::A                      A:::::::::A           N::::::::::N    N::::::N
-  K:::::K K:::::K     H:::::H     H:::::H            A:::::A:::::A                    A:::::A:::::A          N:::::::::::N   N::::::N
-  K::::::K:::::K      H::::::HHHHH::::::H           A:::::A A:::::A                  A:::::A A:::::A         N:::::::N::::N  N::::::N
-  K:::::::::::K       H:::::::::::::::::H          A:::::A   A:::::A                A:::::A   A:::::A        N::::::N N::::N N::::::N
-  K:::::::::::K       H:::::::::::::::::H         A:::::A     A:::::A              A:::::A     A:::::A       N::::::N  N::::N:::::::N
-  K::::::K:::::K      H::::::HHHHH::::::H        A:::::AAAAAAAAA:::::A            A:::::AAAAAAAAA:::::A      N::::::N   N:::::::::::N
-  K:::::K K:::::K     H:::::H     H:::::H       A:::::::::::::::::::::A          A:::::::::::::::::::::A     N::::::N    N::::::::::N
-KK::::::K  K:::::KKK  H:::::H     H:::::H      A:::::AAAAAAAAAAAAA:::::A        A:::::AAAAAAAAAAAAA:::::A    N::::::N     N:::::::::N
-K:::::::K   K::::::KHH::::::H     H::::::HH   A:::::A             A:::::A      A:::::A             A:::::A   N::::::N      N::::::::N
-K:::::::K    K:::::KH:::::::H     H:::::::H  A:::::A               A:::::A    A:::::A               A:::::A  N::::::N       N:::::::N
-K:::::::K    K:::::KH:::::::H     H:::::::H A:::::A                 A:::::A  A:::::A                 A:::::A N::::::N        N::::::N
-KKKKKKKKK    KKKKKKKHHHHHHHHH     HHHHHHHHHAAAAAAA                   AAAAAAAAAAAAAA                   AAAAAAANNNNNNNN         NNNNNNN
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                     
-                                                                                                                                                                   
+  _______      ___      .___  ___.  _______ .______       
+ /  _____|    /   \     |   \/   | |   ____||   _  \      
+|  |  __     /  ^  \    |  \  /  | |  |__   |  |_)  |     
+|  | |_ |   /  /_\  \   |  |\/|  | |   __|  |      /      
+|  |__| |  /  _____  \  |  |  |  | |  |____ |  |\  \----. 
+ \______| /__/     \__\ |__|  |__| |_______|| _| `._____| 
+                                                          
+ __  ___  __    __       ___           ___      .__   __. 
+|  |/  / |  |  |  |     /   \         /   \     |  \ |  | 
+|  '  /  |  |__|  |    /  ^  \       /  ^  \    |   \|  | 
+|    <   |   __   |   /  /_\  \     /  /_\  \   |  . `  | 
+|  .  \  |  |  |  |  /  _____  \   /  _____  \  |  |\   | 
+|__|\__\ |__|  |__| /__/     \__\ /__/     \__\ |__| \__| 
+                                                                                                                                                                                                                        
                                                       
 GamerKhaan Ping Monitor - Online Gaming Perfected!
 "@ -ForegroundColor Cyan
