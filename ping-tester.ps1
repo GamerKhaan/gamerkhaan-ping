@@ -1,7 +1,4 @@
-
-
-```powershell
-$servers = @(
+ $servers = @(
     "1.1.1.1",
     "4.2.2.2",
     "eu-epic.gamerkhaan.com",
@@ -148,7 +145,7 @@ try {
             
             $color = "White"
             if ($latency -eq "Timeout") {
-                $color = "Red"
+                $color = "White"  # Changed from "Red" to "White"
             } else {
                 if ($server -like "*uae*") {
                     if ($latency -lt 75) { $color = "Green" }
@@ -227,30 +224,16 @@ finally {
         $packetLossColor = if ($packetLoss -eq 0) { "Green" } else { "Red" }
         
         if ($data.Latencies.Count -gt 0) {
-            $min = ($data.Latencies | Measure-Object -Minimum).Minimum
-            $max = ($data.Latencies | Measure-Object -Maximum).Maximum
             $avg = [math]::Round(($data.Latencies | Measure-Object -Average).Average, 2)
             if ($server -like "*uae*") {
-                $minColor = if ($min -lt 75) { "Green" } elseif ($min -le 100) { "Yellow" } else { "Red" }
-                $maxColor = if ($max -lt 75) { "Green" } elseif ($max -le 100) { "Yellow" } else { "Red" }
                 $avgColor = if ($avg -lt 75) { "Green" } elseif ($avg -le 100) { "Yellow" } else { "Red" }
             } else {
-                $minColor = if ($min -lt 110) { "Green" } elseif ($min -le 135) { "Yellow" } else { "Red" }
-                $maxColor = if ($max -lt 110) { "Green" } elseif ($max -le 135) { "Yellow" } else { "Red" }
                 $avgColor = if ($avg -lt 110) { "Green" } elseif ($avg -le 135) { "Yellow" } else { "Red" }
             }
-            $minIcon = "[MIN]"
-            $maxIcon = "[MAX]"
             $avgIcon = "[AVG]"
         } else {
-            $min = "N/A"
-            $max = "N/A"
             $avg = "N/A"
-            $minColor = "Gray"
-            $maxColor = "Gray"
             $avgColor = "Gray"
-            $minIcon = ""
-            $maxIcon = ""
             $avgIcon = ""
         }
         
@@ -273,16 +256,6 @@ finally {
         Write-Host ":" -ForegroundColor White
         Write-Host "  Packet Loss: " -NoNewline -ForegroundColor Gray
         Write-Host "$packetLossDisplay%" -ForegroundColor $packetLossColor
-        Write-Host "  Min Ping: " -NoNewline -ForegroundColor Gray
-        Write-Host $min -NoNewline -ForegroundColor $minColor
-        Write-Host " " -NoNewline
-        Write-Host "ms " -NoNewline -ForegroundColor Red
-        Write-Host $minIcon -ForegroundColor Green
-        Write-Host "  Max Ping: " -NoNewline -ForegroundColor Gray
-        Write-Host $max -NoNewline -ForegroundColor $maxColor
-        Write-Host " " -NoNewline
-        Write-Host "ms " -NoNewline -ForegroundColor Red
-        Write-Host $maxIcon -ForegroundColor Red
         Write-Host "  Avg Ping: " -NoNewline -ForegroundColor Gray
         Write-Host $avg -NoNewline -ForegroundColor $avgColor
         Write-Host " " -NoNewline
@@ -293,4 +266,3 @@ finally {
     Write-Host "=================================================" -ForegroundColor Cyan
     Write-Host "Thanks for playing Games!" -ForegroundColor Green
 }
-```
